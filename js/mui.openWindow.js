@@ -46,6 +46,7 @@
         }else{
             if (options.url.indexOf('?') >= 0) {
                 options.extras = $.extend(options.extras, getExtras(options.url.split('?')[1]));
+                delete options.extras.id;
             }
         }
         return openWindow(options);
