@@ -56,6 +56,4 @@ mui.getExtras(function(extras){
 
 # 上源码
 
-- [github](https://github.com/643104191/mui.openWindow) \(觉得ok的记得给我点个星星啊\)
-
 - [点我在线预览](https://643104191.github.io/mui.openWindow/) \(记得给我点个星星啊\)
