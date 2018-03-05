@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>主页</title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+</head>
+<body>
+	<p>mui.openWindow传参的plus&lt;-&gt;web兼容</p>
+	<p>将打开other_page.html</p>
+	<p>传的参数为:{name:'mui'}</p>
+	<div class="mui-btn mui-btn-block mui-btn-primary">点我打开other_page.html</div>
+    <script src="js/mui.min.js"></script>
+    <script src="js/mui.openWindow.js"></script>
+    <script type="text/javascript">
+    	(function($, doc){
+    		$.qsa('.mui-btn')[0].addEventListener('tap', function(){
+    			$.openWindow({
+    				url: './other_page.html',
+    				id: 'other',
+    				extras: {name:'mui'}
+    			});
+    		});
+    	})(mui, document);
+    </script>
+</body>
+</html>
