@@ -21,17 +21,20 @@ mui.openWindow兼容web&amp;plus环境下的页面传参
 
 # 使用方法
 
-1. 引入mui.openWindow.js文件,正常写传参代码
+引入mui.openWindow.js文件,正常写传参代码
+
 ```javascript
 
 mui.openWindow({
-	url: './target.html',
-	id: 'other',
-	extras: {name:'mui'}
+    url: 'target.html',
+    id: 'target',
+    extras: {name:'mui'}
 });
 
 ```
-2. 接收参数页面
+
+接收参数页面
+
 ```javascript
 
 // 同步调用
@@ -50,3 +53,9 @@ mui.getExtras(function(extras){
 });
 
 ```
+
+# 上源码
+
+- [github](https://github.com/643104191/mui.openWindow) \(觉得ok的记得给我点个星星啊\)
+
+- [点我在线预览](https://643104191.github.io/mui.openWindow/) \(记得给我点个星星啊\)
